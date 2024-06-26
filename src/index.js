@@ -1,13 +1,45 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import "./index.css";
-import App from "./App";
+import "./weather.css";
+import Weather from "./Weather";
 import reportWebVitals from "./reportWebVitals";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <App city="Sydney" />
+    <h1>Weather App</h1>
+    <Weather />
+    <footer>
+      <p>
+        This project was coded by{" "}
+        <a
+          href="https://github.com/beattrizgarcia"
+          target="_blank"
+          rel="noreferrer"
+        >
+          {" "}
+          Beatriz Garcia{" "}
+        </a>{" "}
+        and is
+        <a
+          href="https://github.com/beattrizgarcia/weather-project"
+          target="_blank"
+          rel="noreferrer"
+        >
+          {" "}
+          open-sourced on GitHub{" "}
+        </a>{" "}
+        and hosted on{" "}
+        <a
+          href="https://master--gleaming-travesseiro-c4b352.netlify.app/"
+          target="_blank"
+          rel="noreferrer"
+        >
+          {" "}
+          Netlify{" "}
+        </a>
+      </p>
+    </footer>
   </React.StrictMode>
 );
 
